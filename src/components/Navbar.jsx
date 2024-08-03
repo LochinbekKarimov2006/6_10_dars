@@ -6,11 +6,14 @@ import user2 from "../json/in.json";
 import { GlobalContext } from './GlobalContext';
 
 function Navbar() {
+    useEffect(()=>{
+
+        localStorage.setItem('user', JSON.stringify(user2));
+    },[])
   const { state, setState } = useContext(GlobalContext);
   const [data, setData] = useState(null);
   const til = JSON.parse(localStorage.getItem('user')) || {}; // Agar `null` bo'lsa, bo'sh obyekt qaytaradi
   let kl = til.navbar ? til.navbar[0] : {}; 
-  localStorage.setItem('user', JSON.stringify(user2));
 
   // Handle language change
   function tema(e) {
@@ -87,8 +90,8 @@ function Navbar() {
             <option value="cupcake">Cupcake</option> {/* Add more themes as needed */}
           </select>
           <select value={kl.lo} onChange={(e) => tema(e.target.value)} className="select bg-orange-300 rounded-2xl select-bordered ml-[40px] max-w-xs">
-            <option value={"uz"}>Uz</option>
             <option value={"in"}>In</option>
+            <option value={"uz"}>Uz</option>
 
           </select>
         </div>
