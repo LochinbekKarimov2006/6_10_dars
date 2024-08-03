@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import rasim3 from "../img/2.png"
 import rasim4 from "../img/3.png"
 import rasim5 from "../img/5.png"
+import { GlobalContext } from '../components/GlobalContext';
 function Hoome() {
+    let [data,setData]=useState()
+  const { state, setState } = useContext(GlobalContext);
+  useEffect(()=>{
+    setData(state)
+  },[state])
+
     const til = JSON.parse(localStorage.getItem('user'));
     let ing = til.navbar[0]
-    console.log(ing)
   return (
     <div>
         <div className='flex justify-between relative items-center pt-[60px]'>
