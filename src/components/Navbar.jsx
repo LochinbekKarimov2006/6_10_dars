@@ -88,6 +88,7 @@ function Navbar() {
           <select value={kl} onChange={(e) => tema(e.target.value)} className="select bg-orange-300 rounded-2xl select-bordered ml-[40px] max-w-xs">
             <option value={"uz"}>Uz</option>
             <option value={"in"}>In</option>
+            
           </select>
         </div>
       </div>
