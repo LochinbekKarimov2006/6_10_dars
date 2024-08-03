@@ -1,48 +1,83 @@
 import React from 'react'
 import rasim3 from "../img/2.png"
 import rasim4 from "../img/3.png"
+import rasim5 from "../img/5.png"
 function Hoome() {
+    const til = JSON.parse(localStorage.getItem('user'));
+    let ing = til.navbar[0]
+    console.log(ing)
   return (
     <div>
-        <div className='flex justify-between'>
+        <div className='flex justify-between relative items-center pt-[60px]'>
             <div className='text-start'>
-                <h1 className='text-[80px]'>Let your groceries <br /> come to you</h1>
-                <p className='text-[24px] max-w-[580px] text-gray-400'>Get fresh groceries online without stepping out to  make delicious food with the freshest ingredients</p>
-                <div className='flex '>
-                <input className=" rounded-r-none" type="text" placeholder="Type here" />
-                <button className='btn rounded-l-none'>kzsf</button>
+                <h1 className='text-[80px] font-bold leading-[90px] w-[700px]' >{ing.l7}</h1>
+                <p className='text-[24px] max-w-[580px] text-gray-400 mt-4'>{ing.l8}</p>
+                <div className='flex mt-12'>
+                <input className=" bg-slate-200 pl-5 rounded-l-xl w-[400px] rounded-r-none" type="text" placeholder={ing.l9} />
+                <button className='h-[60px] w-[70px] rounded-r-xl hover:bg-orange-200 bg-orange-400'>kzsf</button>
                 </div>
-                <div>
+                <div className='div-1 mt-10'>
+                   
                     <div>
-                        <p>✅</p>
-                        <p>Fresh Vegetables</p>
+                        <h6>✔</h6>
+                        <p>{ing.l10}</p>
                     </div>
                     <div>
-                        <p>✅</p>
-                        <p>Fresh Vegetables</p>
+                        <h6>✔</h6>
+                        <p>{ing.l11}</p>
                     </div>
                     <div>
-                        <p>✅</p>
-                        <p>Fresh Vegetables</p>
+                        <h6>✔</h6>
+                        <p>{ing.l12}</p>
                     </div>
                     <div>
-                        <p>✅</p>
-                        <p>Fresh Vegetables</p>
+                        <h6>✔</h6>
+                        <p>{ing.l13}</p>
                     </div>
+                   
+                   
                 </div>
             </div>
                 <img className='absolute img' src={rasim3} alt="" />
+            <div className='div-2'>
+                <div className= 'bg-red-50 border-[1px] border-neutral-400 p-3 rounded-[30px]'>
+                    <img src={rasim4} alt="" />
+                    <p className='mt-[10px] font-[18px]'>{ing.l14}</p>
+                    <span className='text-red-300 font-[18px]'>$12.00</span>
+                </div>
+                <div className= 'bg-red-50 border-[1px] border-neutral-400 p-3 rounded-[30px]'>
+                    <img src={rasim4} alt="" />
+                    <p className='mt-[10px] font-[18px]'>{ing.l15}</p>
+                    <span className='text-red-300 font-[18px]'>$9.00</span>
+                </div>
+               
+            </div>
+        </div>
+        <div className='div-3'>
             <div>
-                <div>
-                    <img src={rasim4} alt="" />
-                    <p>Fresh Carrot</p>
-                    <span>$9.00</span>
-                </div>
-                <div>
-                    <img src={rasim4} alt="" />
-                    <p>Fresh Carrot</p>
-                    <span>$9.00</span>
-                </div>
+                <img src={rasim5} alt="" />
+                <h4>{ing.l16}</h4>
+                <p>{ing.l17}</p>
+            </div>
+            <div>
+                <img src={rasim5} alt="" />
+                <h4>{ing.l18}</h4>
+                <p>{ing.l17}</p>
+            </div>
+            <div>
+                <img src={rasim5} alt="" />
+                <h4>{ing.l20}</h4>
+                <p>{ing.l17}</p>
+            </div>
+            <div>
+                <img src={rasim5} alt="" />
+                <h4>{ing.l22}</h4>
+                <p>{ing.l17}</p>
+            </div>
+            <div>
+                <img src={rasim5} alt="" />
+                <h4>{ing.l24}</h4>
+                <p>{ing.l17}</p>
             </div>
         </div>
     </div>

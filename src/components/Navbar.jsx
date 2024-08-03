@@ -1,7 +1,17 @@
 import React from 'react'
 import rasim from "../img/logo.png"
 import rasim2 from "../img/1.png"
+import user from "../json/uz.json"
+import user2 from "../json/in.json"
 function Navbar() {
+    function tema(e){
+        if(e=="uz"){
+            localStorage.setItem('user', JSON.stringify(user));
+        }
+        if(e=="in"){
+            localStorage.setItem('user', JSON.stringify(user2));
+        }
+    }
   return (
     <div>
         <div className="navbar bg-base-100">
@@ -51,10 +61,9 @@ function Navbar() {
   <option>Han Solo</option>
   <option>Greedo</option>
 </select>
-<select className="select bg-orange-300 rounded-2xl select-bordered ml-[40px] max-w-xs">
-  <option disabled selected>Ozbekcha</option>
-  <option>Han Solo</option>
-  <option>Greedo</option>
+<select onChange={(e)=>{tema(e.target.value)}} className="select bg-orange-300 rounded-2xl select-bordered ml-[40px] max-w-xs">
+  <option value={"uz"}>uz</option>
+  <option value={"in"}>in</option>
 </select>
   </div>
 </div>
