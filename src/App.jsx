@@ -4,7 +4,7 @@ import Hoome from './pages/Hoome'
 function App() {
 
   return (
-    <div className='cursor-no-drop'>
+    <div >
      <Navbar/>
     <Hoome/>
   </div>

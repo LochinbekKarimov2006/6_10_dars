@@ -43,13 +43,32 @@ body{
 .div-3{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-top: 140px;
+  width: 100%;
+  gap: 20px;
+  height: 300px;
+  align-items: center;
 }
 .div-3 div{
+  display: flex;
+  flex-direction: column;
   text-align: start;
   width: 300px;
-
+  border-radius: 10px;
+padding: 15px;
+  height: 200px;
+  /* transition: all .5s ease; */
+  cursor: cell;
+}
+.div-3 div:hover{
+  -webkit-box-shadow: 4px 4px 27px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 4px 4px 27px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 4px 4px 27px 0px rgba(34, 60, 80, 0.2);
+}
+.div-3 img {
+  width: 96px;
+  height: 96px;
 }
 .div-3 div  h4{
 font-size: 24px;
@@ -86,4 +105,7 @@ color: #909090;
   right: 300px;
   bottom: -80px;
   z-index: -3;
+}
+html{
+  cursor: move;
 }
