@@ -1,7 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react'
 import rasim3 from "../img/2.png"
 import rasim4 from "../img/3.png"
+import rasim6 from "../img/6.png"
+import rasim7 from "../img/7.png"
 import rasim5 from "../img/5.png"
+import rasim8 from "../img/8.png"
+import rasim9 from "../img/9.png"
+import rasim10 from "../img/10.png"
+import rasim11 from "../img/11.png"
+import rasim12 from "../img/12.png"
 import { GlobalContext } from '../components/GlobalContext';
 function Hoome() {
     let [data,setData]=useState()
@@ -45,16 +52,18 @@ function Hoome() {
                 </div>
             </div>
                 <img className='absolute img' src={rasim3} alt="" />
+                <img className='absolute img2' src={rasim6} alt="" />
+                <img className='absolute img3' src={rasim7} alt="" />
             <div className='div-2'>
+                <div className= 'bg-red-50 border-[1px] border-neutral-400 p-3 rounded-[30px]'>
+                    <img src={rasim12} alt="" />
+                    <p className='mt-[10px] font-[18px]'>{ing.l15}</p>
+                    <span className='text-red-300 font-[18px]'>$9.00</span>
+                </div>
                 <div className= 'bg-red-50 border-[1px] border-neutral-400 p-3 rounded-[30px]'>
                     <img src={rasim4} alt="" />
                     <p className='mt-[10px] font-[18px]'>{ing.l14}</p>
                     <span className='text-red-300 font-[18px]'>$12.00</span>
-                </div>
-                <div className= 'bg-red-50 border-[1px] border-neutral-400 p-3 rounded-[30px]'>
-                    <img src={rasim4} alt="" />
-                    <p className='mt-[10px] font-[18px]'>{ing.l15}</p>
-                    <span className='text-red-300 font-[18px]'>$9.00</span>
                 </div>
                
             </div>
@@ -66,22 +75,22 @@ function Hoome() {
                 <p>{ing.l17}</p>
             </div>
             <div>
-                <img src={rasim5} alt="" />
+                <img src={rasim10} alt="" />
                 <h4>{ing.l18}</h4>
                 <p>{ing.l17}</p>
             </div>
             <div>
-                <img src={rasim5} alt="" />
+                <img src={rasim9} alt="" />
                 <h4>{ing.l20}</h4>
                 <p>{ing.l17}</p>
             </div>
             <div>
-                <img src={rasim5} alt="" />
+                <img src={rasim8} alt="" />
                 <h4>{ing.l22}</h4>
                 <p>{ing.l17}</p>
             </div>
             <div>
-                <img src={rasim5} alt="" />
+                <img src={rasim11} alt="" />
                 <h4>{ing.l24}</h4>
                 <p>{ing.l17}</p>
             </div>

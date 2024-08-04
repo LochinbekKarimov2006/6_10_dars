@@ -76,3 +76,14 @@ color: #909090;
 .button2{
   background-color: #2d3c46;
 }
+
+.img2{
+  z-index: -2;
+  right: 370px;
+  bottom: 0;
+}
+.img3{
+  right: 300px;
+  bottom: -80px;
+  z-index: -3;
+}
