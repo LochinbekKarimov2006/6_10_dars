@@ -27,7 +27,7 @@ function Hoome() {
   }, [state]);
 
   const til = JSON.parse(localStorage.getItem('user')) || {};
-  const ing = til.navbar?.[0] || {};  // Mavjud emas bo'lsa bosh obyektni o'rnatish
+  const ing = til.navbar?.[0] || {};
 
   return (
     <div>
@@ -75,6 +75,31 @@ function Hoome() {
         </div>
       </div>
       <div className='div-3 carousel carousel-end rounded-box'>
+        <div className='carousel-item'>
+          <img src={rasim5} alt="" />
+          <h4>{ing.l16}</h4>
+          <p>{ing.l17}</p>
+        </div>
+        <div className='carousel-item'>
+          <img src={rasim10} alt="" />
+          <h4>{ing.l18}</h4>
+          <p>{ing.l17}</p>
+        </div>
+        <div className='carousel-item'>
+          <img src={rasim9} alt="" />
+          <h4>{ing.l20}</h4>
+          <p>{ing.l17}</p>
+        </div>
+        <div className='carousel-item'>
+          <img src={rasim8} alt="" />
+          <h4>{ing.l22}</h4>
+          <p>{ing.l17}</p>
+        </div>
+        <div className='carousel-item'>
+          <img src={rasim11} alt="" />
+          <h4>{ing.l24}</h4>
+          <p>{ing.l17}</p>
+        </div>
         <div className='carousel-item'>
           <img src={rasim5} alt="" />
           <h4>{ing.l16}</h4>
