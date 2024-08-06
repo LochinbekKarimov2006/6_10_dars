@@ -1,0 +1,54 @@
+{
+    "in": {
+        "translation": {
+            "l0":"in",
+            "l1":"Home",
+            "l2":"Categories",
+            "l3":"Sales",
+            "l4":"FAQ",
+            "l5":"About",
+            "l6":"Contact",
+            "l7":"Let your groceries come to you        ",
+            "l8":"Get fresh groceries online without stepping out to make delicious food with the freshest ingredients",
+            "l9":"Search here",
+            "l10":"Fresh Vegetables",
+            "l11":"100% Guarantee",
+            "l12":"Cash on Delivery",
+            "l13":"Fast Delivery",
+            "l14":"Fresh Spinach",
+            "l15":"Fresh Carrot",
+            "l16":"Dairy Products",
+            "l17":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "l18":"Vegetables & Fruits",
+            "l20":"Spices & Seasonings",
+            "l22":"Honey",
+            "l24":"Flour"
+        }
+      },
+      "uz": {
+        "translation": {
+            "l0":"uz",
+            "l1":"Uy",
+            "l2":"Toifalar",
+            "l3":"Sotish",
+            "l4":"FAQ",
+            "l5":"Haqida",
+            "l6":"Aloqa",
+            "l7":"Oziq ovqatingiz sizga yetib kelsin",
+            "l8" :"Eng yangi ingredientlardan mazzali taom tayyorlash uchun qadam tashlamasdan yangi oziq ovqat mahsulotlarini onlayn harid qiling",
+            "l9":"shu yerdan qidiring",
+            "l10":"Toza sabzavotlar",
+            "l11":"100% Garantiya",
+            "l12":"Yetkazib berish naqt pul",
+            "l13":"Tez yetkazib berish",
+            "l14":"Toza ismaloq",
+            "l15":"Toza sabzi",
+            "l16":"Sutli mahsulotlar",
+            "l17": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "l18":"Sabzavot va mevalar",
+            "l20":"Ziravorlar va ziravorlar",
+            "l22":"Asal",
+            "l24":"Un"
+        }
+      }
+}

@@ -1,35 +1,34 @@
 import React, { useContext, useState, useEffect } from 'react';
 import rasim from "../img/logo.png";
 import rasim2 from "../img/1.png";
-import user from "../json/uz.json";
-import user2 from "../json/in.json";
 import { GlobalContext } from './GlobalContext';
+import { useTranslation } from 'react-i18next';
 
 function Navbar() {
-    useEffect(()=>{
-        localStorage.setItem('user', JSON.stringify(user2));
-        console.log(user2)
-    },[])
+  const { t, i18n } = useTranslation();
   const { state, setState } = useContext(GlobalContext);
   const [data, setData] = useState(null);
-  const til = JSON.parse(localStorage.getItem('user')) || {}; // Agar `null` bo'lsa, bo'sh obyekt qaytaradi
-  let kl = til.navbar ? til.navbar[0] : {}; 
 
-  // Handle language change
+  // Load saved language from localStorage on component mount
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('til') || 'uz'; // Default to 'uz' if no language is saved
+    i18n.changeLanguage(savedLanguage);
+  }, [i18n]);
+
   function tema(e) {
     if (e === "uz") {
-      localStorage.setItem('user', JSON.stringify(user));
-      setState(user);
+      localStorage.setItem('til', "uz");
+      i18n.changeLanguage("uz");
     } else if (e === "in") {
-      localStorage.setItem('user', JSON.stringify(user2));
-      setState(user2);
+      localStorage.setItem('til', "in");
+      i18n.changeLanguage("in");
     }
     setData(state + 1); // Triggers a re-render
   }
 
   // Handle theme change
   function changeTheme(e) {
-    const selectedTheme = e
+    const selectedTheme = e;
     document.documentElement.setAttribute('data-theme', selectedTheme);
     localStorage.setItem('theme', selectedTheme);
   }
